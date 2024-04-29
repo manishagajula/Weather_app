@@ -42,6 +42,7 @@ export const WeatherData = () => {
   };
   useEffect(() => {
     getWeatherData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [city]);
 
   const handleSearchByCity = () => {
